@@ -16,7 +16,7 @@ const errorLink = onError(({ graphQLErrors }) => {
 });
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000",
+  uri: "https://hidden-temple-99005.herokuapp.com/",
   onError: ({ networkError, graphQLErrors }) => {
     console.log("graphQLErrors", graphQLErrors);
     console.log("networkError", networkError);
